@@ -127,7 +127,7 @@
                 this._modul.seveCard(cardData);
                 this.getAddDisplaiCard();
             } else {
-                alert('не верный номер карты');
+                alert('неверный номер карты');
             }
         }
         deleteCard(cardID) {
