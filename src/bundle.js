@@ -63,10 +63,10 @@
             let setImg = (cardNumber) => {
 
                 if (cardNumber[0] == 5) {
-                    return '/assets/img/icon/master-card-colored.svg'
+                    return 'assets/img/icon/master-card-colored.svg'
                 }
                 if (cardNumber[0] == 4) {
-                    return '/assets/img/icon/visa-colored.svg'
+                    return 'assets/img/icon/visa-colored.svg'
                 }
             };
 
@@ -77,7 +77,7 @@
              <p class = "card_info_block_com" > ${cardData.cardNote} </p>
             </div >
              <div class = "card_monip" >
-                <img src = "/assets/img/icon/delete.svg" class = "card_monip_img card_monip_del" alt = "dellete" data-card_id = "${cardData.id}"/>
+                <img src = "assets/img/icon/delete.svg" class = "card_monip_img card_monip_del" alt = "dellete" data-card_id = "${cardData.id}"/>
              </div>`;
             return cardElement
         }
