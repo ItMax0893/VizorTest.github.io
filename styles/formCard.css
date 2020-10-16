@@ -145,6 +145,7 @@ button:active::after {
 @media screen and (max-width:1000px) {
     .new_cards_form_blck {
         width: 80%;
+        min-height: 10rem;
         height: 20vh;
     }
 
