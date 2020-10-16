@@ -1,0 +1,212 @@
+.new_cards_form_blck {
+    width: 40%;
+    background: linear-gradient(45deg, #30cfd0, #330867);
+    padding: 2rem;
+    display: flex;
+    max-height: 50vh;
+    justify-content: space-between;
+    align-items: center;
+    border-radius: 1rem;
+    -webkit-border-radius: 1rem;
+    -moz-border-radius: 1rem;
+    -ms-border-radius: 1rem;
+    -o-border-radius: 1rem;
+    position: relative;
+}
+
+.new_cards_form_blck h2 {
+    text-transform: uppercase;
+    font-size: 1rem;
+    position: absolute;
+    top: 1rem;
+    left: 1rem;
+    color: white;
+
+}
+
+.form {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: whitesmoke;
+}
+
+
+
+.input {
+
+    position: relative;
+    width: 15rem;
+    display: block;
+    margin: 9px auto;
+    height: 3rem;
+    font-size: 1rem;
+    color: rgb(0, 15, 46);
+    padding: 0.8rem;
+    border-radius: 0.6rem;
+    border: none;
+    background: rgba(255, 255, 255, 0.699);
+    -webkit-transition: all 2s ease-in-out;
+    -moz-transition: all 2s ease-in-out;
+    -o-transition: all 2s ease-in-out;
+    transition: all 0.2s ease-in-out;
+    -webkit-border-radius: 0.6rem;
+    -moz-border-radius: 0.6rem;
+    -ms-border-radius: 0.6rem;
+    -o-border-radius: 0.6rem;
+}
+
+.textarea {
+
+    height: 5rem;
+}
+
+.input:focus {
+    outline: none;
+    box-shadow: 0px 0px 10px rgba(179, 180, 83, 0.664);
+    background: rgba(255, 255, 255, 0.774);
+}
+
+button {
+    margin-top: 3rem;
+    position: relative;
+    display: inline-block;
+    background: none;
+    outline: none;
+    border: none;
+    padding: 0;
+    cursor: pointer;
+    color: #eee;
+    text-transform: uppercase;
+    font-weight: 700;
+    letter-spacing: .05rem;
+}
+
+span {
+    position: relative;
+    z-index: 1;
+    display: block;
+    min-width: 1rem;
+    padding: 1rem;
+    border-radius: 2rem;
+    background-color: #286e79;
+    border: 1px solid darken(#30a4b9, 5%);
+    box-shadow: -5px 5px 10px rgba(0, 0, 0, 0.2);
+    transition: transform .1s, box-shadow .2s, background-color .2s;
+    -webkit-transition: transform .1s, box-shadow .2s, background-color .2s;
+    -moz-transition: transform .1s, box-shadow .2s, background-color .2s;
+    -ms-transition: transform .1s, box-shadow .2s, background-color .2s;
+    -o-transition: transform .1s, box-shadow .2s, background-color .2s;
+    -webkit-border-radius: 2rem;
+    -moz-border-radius: 2rem;
+    -ms-border-radius: 2rem;
+    -o-border-radius: 2rem;
+}
+
+button::after {
+    content: '';
+    position: absolute;
+    top: -1rem;
+    bottom: -1rem;
+    left: -1rem;
+    right: -1rem;
+    border-radius: 4rem;
+    box-shadow: 0 0 0px rgba(0, 0, 0, 0.2), inset 0 0 0px rgba(0, 0, 0, 0.2);
+    transition: box-shadow .1s;
+    -webkit-border-radius: 4rem;
+    -moz-border-radius: 4rem;
+    -ms-border-radius: 4rem;
+    -o-border-radius: 4rem;
+}
+
+button:hover span,
+button:focus span {
+    background-color: lighten(#286e79, 3%);
+}
+
+button:active span {
+
+    background-color: #286e79;
+    transform: scale(0.97);
+    box-shadow: -2px 2px 5px rgba(0, 0, 0, 0.2);
+
+
+
+}
+
+button:active::after {
+    box-shadow: 0 0 2px rgba(0, 0, 0, 0.2), inset -3px 3px 1em rgba(0, 0, 0, 0.2);
+}
+
+
+@media screen and (max-width:1000px) {
+    .new_cards_form_blck {
+        width: 80%;
+        height: 20vh;
+    }
+
+    .form {
+        flex-direction: row;
+        align-items: flex-end;
+        justify-content: space-between;
+    }
+
+    .input {
+        width: 12rem;
+    }
+
+    button {
+        margin: 0;
+
+    }
+}
+
+@media screen and (max-width:800px) {
+    .new_cards_form_blck {
+        width: 90%;
+        
+    }
+    
+}
+@media screen and (max-width:680px) {
+ .input {
+     width: 12rem;
+     position: relative;
+     top: 1.5rem;
+ }
+    button{
+        position: absolute;
+        top: 1rem;
+        left: 1rem;
+    }
+    .new_cards_form_blck h2{
+        left: 10rem;
+        
+    }
+    .textarea {
+
+        height: 3rem;
+    }
+}
+@media screen and (max-width:680px) {
+.input {
+    width: 10rem;
+    font-size: 0.8rem;
+}
+.new_cards_form_blck h2 {
+    font-size: 0.8rem;
+}
+}
+@media screen and (max-width:470px) {
+    .new_cards_form_blck{
+        padding: 0.3rem;
+    }
+.input {
+    width: 8rem;
+   justify-content: space-around;
+   top: 0.4rem;
+}
+}

@@ -1,0 +1,17 @@
+{
+  "name": "bank-cards-mvc",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "rollup src/index.js --file assets/main.js --format iife"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "prettier": "^2.1.2",
+    "rollup": "^2.30.0"
+  }
+}

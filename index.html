@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/styles/style.css">
+    <title>Card</title>
+</head>
+
+<body>
+    <header class="header">
+        <div class="container">
+        </div>
+    </header>
+    <main class="main">
+        <div class="container main_container">
+            <div class="cards_block">
+            <h1>Ваши карты</h1>
+                <hr>
+                </hr>
+                <div class="cardsContainer">
+                </div>
+            </div>
+            <div class="new_cards_form_blck">
+                <h2>Добавить новую карту</h2>
+                <form id="bankCardForm" class="form">
+                    <div>
+                        <input class="input" id="cardNumber" type="text" required="required" name="cardNumber" placeholder="xxxxxxxxxxxxxxxx"/>
+                    </div>
+                    <div>
+                        <textarea maxlength='1024' class="input textarea" id="cardNote" required="required"
+                            name="cardNote" placeholder="коментарий"></textarea>
+                    </div>
+                   <button><span>Добавить</span></button>
+                </form>
+            </div>
+        </div>
+    </main>
+    <footer class="footer">
+    
+    </footer>
+    <script src="/src/bundle.js"></script>
+</body>
+
+</html>

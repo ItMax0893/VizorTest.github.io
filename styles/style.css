@@ -1,0 +1,62 @@
+ @import url("/styles/card.css");
+ @import url("/styles/formCard.css");
+
+ * {
+     box-sizing: border-box;
+     margin: 0;
+     padding: 0;
+ }
+
+ body {
+     font-family: 'Open Sans Condensed', sans-serif;
+
+     width: 100%;
+     max-width: 1800px;
+     margin: 0 auto;
+     font-size: 10px;
+     background-color: rgb(216, 216, 216);
+     padding: 2vh 0 3vh 0;
+     overflow-y: hidden;
+ }
+
+
+ main {
+     min-height: 80vh;
+ }
+
+ footer {
+     height: 10vh;
+ }
+
+ .container {
+     width: 80%;
+     height: 100%;
+     margin: 0 auto;
+ }
+
+ .main_container {
+     display: flex;
+     min-height: 80vh;
+     padding: 1rem;
+     background: linear-gradient(45deg, #a1ffce, #f9ffd1);
+     border-radius: 2em;
+     -webkit-border-radius: 2em;
+     -moz-border-radius: 2em;
+     -ms-border-radius: 2em;
+     -o-border-radius: 2em;
+     box-shadow: 4px 4px 5px gray;
+ }
+
+@media screen and (max-width:1000px){
+ .main_container {
+     flex-direction: column-reverse;
+    align-items: center;
+    justify-content: flex-end;
+ }
+ .container{
+     width: 95%;
+ }
+}
+@media screen and (max-width:800px) {
+    
+}
